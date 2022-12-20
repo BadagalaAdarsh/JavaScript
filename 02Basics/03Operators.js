@@ -29,3 +29,11 @@ console.log(displayDiscountPercentage + "% off");
 // it looks like we can use the variables with out acutally giving the var key word
 // but it is not a good practice to do so
 // it is better to use the var key word
+
+var result = listingPrice > sellingPrice;
+
+console.log(result);
+console.log(typeof result);
+
+//https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence
+// documentation for operator precedence in javascript in mozilla
