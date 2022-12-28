@@ -21,3 +21,13 @@ function bigTipper(a) {
 
 bigTipper("200");
 bigTipper(200);
+
+var name = "Adarsh";
+console.log(name);
+
+function sayName() {
+    var name = "Mr. Adarsh";
+    console.log(name);
+}
+
+sayName();
