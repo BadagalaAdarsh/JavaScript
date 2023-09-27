@@ -67,3 +67,38 @@ console.log(typeof bigNumber );
 // data type using type of for non primitive data type is called object data type such for function it will be like object function
 
 // JavaScript is a dynamically typed language. This means that the data type of a variable is determined by the value that is assigned to it, rather than being explicitly declared. For example, if you assign a string to a variable, the variable will be of type "string". If you then assign a number to the same variable, the variable will change to be of type "number"  
+
+
+
+
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Memory Notes
+
+// Stack Memory and Heap Memory
+// Primitive data type => Stack Memory
+// Non Primitive data type => Heap Memory
+
+
+let myYoutubeName = "adarshbadagaladotcom" 
+
+let anotherName = myYoutubeName 
+
+anotherName = "anotheradarshbadagaladotcom"
+
+console.log(anotherName); // both are not same as they are passed as a value not reference
+console.log(myYoutubeName);
+
+let userOne = {
+    email: "user@google.com",
+    upi: "user&ybl"
+}
+
+let userTwo = userOne 
+
+userTwo.email = "user@yahoo.com"
+
+console.log(userOne.email); // both have been changed as they are passed as the reference
+console.log(userTwo.email);
