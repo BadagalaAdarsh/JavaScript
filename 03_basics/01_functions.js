@@ -53,6 +53,42 @@ function loginUserMessage(userName) {
 }
 
 // console.log(loginUserMessage("Adarsh"));
-console.log(loginUserMessage("Adarsh"));//  -> undefined
+// console.log(loginUserMessage("Adarsh"));//  -> undefined
 
+// REST operator is same as spread
+// based on use case we call it rest or spread
+// used to take multiple items at once
+function calculateCartPrice(...num1){
+
+    return num1;
+
+}
+
+// console.log(calculateCartPrice(200, 400, 500));
+// output: [200, 400, 500]
+// array returns
+
+const user = {
+    username: "adarsh",
+    price: 199
+}
+
+function handleObject(anyObject) {
+    console.log(`User name is ${anyObject.username} and price is ${anyObject.price}`); // if object does'nt have username or price then we get undefined
+}
+
+// handleObject(user);
+handleObject({
+    username: "sam",
+    price: 399
+});
+
+const myNewArray = [200, 400, 100, 600]
+
+function returnSecondValue(getArray){
+    return getArray[1];
+}
+
+// console.log(returnSecondValue(myNewArray));
+console.log(returnSecondValue([200, 400, 500, 1000]));
 
