@@ -48,7 +48,7 @@ console.log(returnedTarget === target);
 */
 
 const obj3 = {...obj1, ...obj2}; // 90 percent we use this
-console.log(obj3);
+// console.log(obj3);
 
 // when we get values from DB we use these in general
 
@@ -63,18 +63,48 @@ const users = [
     },
 ]
 
-console.log(users[1].email);
+// console.log(users[1].email);
 
-console.log(tinderUser);
+// console.log(tinderUser);
 
 
-console.log(Object.keys(tinderUser)); // returns array with keys as string
-console.log(Object.values(tinderUser));
+// console.log(Object.keys(tinderUser)); // returns array with keys as string
+// console.log(Object.values(tinderUser));
 
-console.log(Object.entries(tinderUser)); // used very less , return array such as [key, value]
+// console.log(Object.entries(tinderUser)); // used very less , return array such as [key, value]
 // output => [ [ 'id', '123abc' ], [ 'name', 'Sammy' ], [ 'isLoggedIn', false ] ]
 
-console.log(tinderUser.hasOwnProperty('isLoggedIn')); // return boolean, check if the object as a property or not
+// console.log(tinderUser.hasOwnProperty('isLoggedIn')); // return boolean, check if the object as a property or not
 
 // to get more methods on the objects 
 // browser -> inspect -> console
+
+
+const course = {
+    courseName : "Java script",
+    price: "999",
+    courseInstructor: "Hitech Choudhary Sir"
+}
+
+// course.courseInstructor
+// below is just a syntactical sugar
+// we can use the usual dot operator as well
+// const {courseInstructor} = course;
+// console.log(courseInstructor);
+
+// const {courseInstructor : instructor } = course
+// console.log(instructor);
+
+
+// BELOW IS JSON
+// here keys have to be string
+// Generaly api returns in JSON
+// {
+//     "name": "adarsh",
+//     "coursename": "Java Script",
+//     "price": "free",
+// }
+
+
+// Sometimes API returns array of objects 
+// we can use random user me
